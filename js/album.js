@@ -9,6 +9,7 @@ getAlbum();
 function loadAlbum(dataIn) {
     const container = document.getElementById('album-container');
     for (const album of dataIn) {
+       
         const div = document.createElement('div');
         div.classList.add('sigleAlbum');
         div.innerHTML = `<h3>${album.title}</h3> <img src='${album.thumbnailUrl}'>`;
